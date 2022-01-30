@@ -26,6 +26,12 @@
         padding-bottom: 20%;
     } 
 	
+
+    .adsbygoogle{
+	border=black;
+	margin=1%;     
+    }
+
     .navigation2{
         background-image: url("https://i2.wp.com/piziadas.com/wp-content/uploads/2015/02/fractal.png"); 
         background-repeat: no-repeat; 
