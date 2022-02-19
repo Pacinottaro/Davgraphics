@@ -52,13 +52,12 @@ h1{
   width: 100%;
 }
 
-.images a{
+.inl{
   margin:0px 40px;
   margin-bottom: 30px;
   display:inline-block;
   text-decoration:none;
-  color:black;
-
+  text-align: center;
 }
 
 .caption{
@@ -99,14 +98,26 @@ h1{
   padding: 4px 16px;
 }
 
+.menu li img {
+  color:  white;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 16px;
+}
+
 .menu li.active, a.active, .menu li:hover a:hover{
+  color:  white;
+  background-color: #595959;
+}
+
+.menu li.active, img.active, .menu li:hover a:hover{
   color:  white;
   background-color: #595959;
 }
 
 .imma{
   width: 50%;
-  height: 50%;
   float:left;
   margin-left: 2%;
   margin-top: 2%;
@@ -132,9 +143,8 @@ a{
 }
 
 .imm4{
-  border-radius: 30px;
-  width: 200px; 
-  height: 250px;
+
+  width: 300px; 
   margin-bottom: 10px;
   margin: 0 auto;
   display:inline-block;
@@ -164,19 +174,16 @@ h2{
 }
 
 #myImg {
-  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 #myImg1 {
-  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 #myImg2 {
-  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -219,7 +226,12 @@ h2{
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
+}
+
+.caption{
+  font-size: large;
+  font-weight: bold;
+  margin-top: 8px;
 }
 
 /* Add Animation */
