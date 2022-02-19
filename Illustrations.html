@@ -26,21 +26,45 @@
     <div class="content">
       <p>
         <br><br>
-        <div class="images">
-            <a href="https://www.instagram.com/p/CRbnetwJO3H/?utm_source=ig_web_copy_link"> 
-                <img alt="Hippie's Van" class="imm3" src="./Van.png">
+        <div class="images"> 
+                <img id="myImg" alt="Hippie's Van" alt="Hippie's Van" src="./Van.png" style="width:100%;max-width:300px">
                 <div class="caption">Hippie's Van</div>
-            </a>
-            <a href="https://www.instagram.com/p/CRUTAXfJwgr/?utm_source=ig_web_copy_link"> 
-                <img alt="Porto Venere" class="imm3" src="./PT.png">
+
+                <img id="myImg" alt="Porto Venere" alt="Porto Venere" src="./PT.png" style="width:100%;max-width:300px">
                 <div class="caption">Porto Venere</div>
-            </a>
-            <a href="https://www.instagram.com/p/CZl_HgeqBec/?utm_source=ig_web_copy_link"> 
-                <img alt=" Tokyo's Pagoda" class="imm3" src="./Pagoda.png">
+
+                <img id="myImg" alt="Tokyo's Pagoda" src="./Pagoda.png" style="width:100%;max-width:300px">
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="myImg">
+                  <div id="caption"></div>
+                </div>
+                <script>
+                  // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                  modal.style.display = "none";
+                }
+                </script>
                 <div class="caption">Tokyo's Pagoda</div>
-            </a>
-            <br> 
-     				    				    					
+
+                
+            <br> 				    					
         </div>
       </p>
     </div>
