@@ -309,3 +309,58 @@ h2{
     width: 100%;
   }
 }
+
+button {
+  background-color: #003399;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.thumbnail{
+  position: relative;
+  width: 200px;
+  margin-left: 40px;
+  margin: 10px auto;
+  margin-top: 70px;
+}
+
+.clr{
+  float:left;
+}
+
+input {
+  padding: 10px;
+  font-size: 17px;
+  font-family: Raleway;
+  color:black;
+  border: 1px solid #aaaaaa;
+  background-color: white;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.label{
+  margin-left: 40px;
+}
+
+.dis{
+  display:inline-block;
+  width: 48%; 
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.cen{
+  margin: 0 auto;
+}
