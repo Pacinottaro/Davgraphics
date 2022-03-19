@@ -37,7 +37,7 @@
               <div class="caption">Hippie's Van</div>
               <div id="myModal" class="modal">
                 <span class="close">&times;</span>
-                <img class="modal-content" id="img01" src="./Van1.png">
+                <img class="modal-content" id="img01">
                 <div id="caption"></div>
               </div></li>
             <li>
@@ -66,7 +66,7 @@
                 var captionText = document.getElementById("caption");
                 img.onclick = function(){
                   modal.style.display = "block";
-                  modalImg.src = this.src;
+                  modalImg.src = "./Van1.png";
                   captionText.innerHTML = this.alt;
                 }
                
