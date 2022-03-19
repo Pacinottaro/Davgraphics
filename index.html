@@ -117,6 +117,13 @@
                 span.onclick = function() { 
                   modal.style.display = "none";
                 }
+
+                let immagini = document.querySelectorAll("img");
+                  immagini.forEach((value)=>{
+                      value.oncontextmenu = (e)=>{
+                          e.preventDefault();
+                      }
+                  })
                 </script>
         </ul>
                 
