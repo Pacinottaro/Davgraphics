@@ -350,8 +350,9 @@ input.invalid {
   background-color: #ffdddd;
 }
 
-.label{
-  margin-left: 40px;
+label{
+  font-weight: bolder;
+  font-size: 150%;
 }
 
 .dis{
@@ -363,4 +364,18 @@ input.invalid {
 
 .cen{
   margin: 0 auto;
+  background-color: #595959;
+  width: 30%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.spa{
+  margin: 10px auto;
+}
+
+.dimens{
+  padding: 4px;
+  width:235px;
 }

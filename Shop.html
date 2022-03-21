@@ -27,29 +27,35 @@
         </div>
     <div class="content">
       <h1 style="text-align:center">Personalized Illustrations</h1>
-      <form action="mailto:davgraphics03@gmail.com?subject=Test" method="post" enctype="text/plain">
-        <div >
-          <label for="name">Name</label>
+      <p>
+      <form class="cen" action="mailto:davgraphics03@gmail.com?subject=Richiesta Illustrazione Personalizzata" method="post" enctype="text/plain">
+        <div class="spa">
+          <label for="name">Nome</label>
           <div class="col-sm-10">
-            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="text" name="name" id="name" placeholder="Mario">
           </div>
         </div>
-        <div>
-          <label for="company">Company</label>
+        <div class="spa">
+          <label for="company">Cognome</label>
           <div>
-            <input type="text" name="company" id="company" placeholder="Company">
+            <input type="text" name="company" id="company" placeholder="Rossi">
           </div>
         </div>
-        <div>
-          <label for="email">Email</label>
+        <div class="spa">
+          <label for="dimensioni">Dimensioni</label>
           <div>
-            <input type="email" name="email" id="email" placeholder="Email">
+            <select name="dimens" id="dimens" class="dimens">
+              <option value="1920x1080p">1920x1080p</option>
+              <option value="1080x1920p">1080x1920p</option>
+              <option value="1080x1080p">1080x1080p</option>
+              <option value="Altro">Altro(specificare nel prossimo campo)</option>
+            </select>
           </div>
         </div>
-        <div>
-          <label for="message">Message</label>
-          <div>
-            <textarea rows="3" name="message" placeholder="Your Message"></textarea>
+        <div class="spa">
+          <label for="message">Dettagli Disegno</label>
+          <div class="spa">
+            <input type="text" name="details" id="details" placeholder="colore, ecc.">
           </div>
         </div>
         <div>
@@ -58,6 +64,8 @@
           </div>
         </div>
       </form>
+      <br><br>
+    </p>
     </div>
     <div class="footer">
       <br>
