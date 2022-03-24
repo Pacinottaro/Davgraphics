@@ -186,11 +186,18 @@ h2{
   transition: 0.3s;
 }
 
+#myImg4 {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 #myImg:hover {opacity: 0.7;}
 
 #myImg1:hover {opacity: 0.7;}
 
 #myImg2:hover {opacity: 0.7;}
+
+#myImg3:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
