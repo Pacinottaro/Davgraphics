@@ -2,14 +2,14 @@ html,body{height:  100%; margin:0; padding: 0}
 body{font-family: 'Montserrat';font-size: 22px; font-size: 76%} 
 
 .header{
-  background-color: #1a1a1a;
+  background-color: #595959;
   overflow: hidden;
   padding-bottom: 2%;
 }
 
 .navigation{
   overflow: hidden;
-  background-color: #1a1a1a;
+  background-color: #595959;
 }
 
 .content{
@@ -20,7 +20,7 @@ body{font-family: 'Montserrat';font-size: 22px; font-size: 76%}
 }
 
 .footer{
-  background-color: #404040 ;
+  background-color: #595959 ;
   color: white;
   overflow: hidden;
   position: relative;
@@ -69,10 +69,12 @@ h1{
 
 .line{
   background-color: white;
+  height:3px;
+  margin-bottom: 0;
+  margin-top: -1px;
 }
 
 .menu {
-  background-color:#1a1a1a;
   font-size: 150%;
   margin: 0;
   padding: 0;
@@ -84,7 +86,6 @@ h1{
 .menu li {
   background-color:#1a1a1a;
   display: inline-block;
-  margin: 2px;
 }
 
 .menu li a {
@@ -106,12 +107,49 @@ h1{
 
 .menu li.active, a.active, .menu li:hover a:hover{
   color:  white;
-  background-color: #595959;
+  background-color: #404040;
 }
 
 .menu li.active, img.active, .menu li:hover a:hover{
   color:  white;
   background-color: #595959;
+}
+
+.menu1 {
+  font-size: 150%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.menu1 li {
+  margin-top: 2px;
+  background-color:white;
+  display: inline-block;
+}
+
+.menu1 li a {
+  color:  black;
+  display: block;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 16px;
+}
+
+.menu1 li img {
+  color:  white;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 16px;
+}
+
+.menu1 li.active, a.active, .menu1 li:hover a:hover{
+  color:  white;
+  background-color: #cecece;
 }
 
 .imma{
@@ -409,6 +447,7 @@ label{
   border-radius: 60px;
 }
 
-.am{
-  background-color: #595959;
+.AM{
+  background-color: #404040;
+  overflow: hidden;
 }
