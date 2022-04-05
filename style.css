@@ -439,7 +439,7 @@ label{
 }
 
 .immag{
-  width: 400px; 
+  width: 500px; 
   margin: 10px;
   display:inline-block;
   text-align:center;
@@ -452,10 +452,20 @@ label{
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 20px;
-  border-radius: 15px;
+  border-radius: 20px;
   perspective: 1px;
 }
 
 .titotab{
   margin-top: 0;
+}
+
+td{
+  text-align: center;
+  margin: 2%;
+  text-justify: distribute-all-lines;
+}
+
+h3{
+  font-size: 180%;
 }
