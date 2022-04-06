@@ -2,14 +2,14 @@ html,body{height:  100%; margin:0; padding: 0}
 body{font-family: 'Montserrat';font-size: 22px; font-size: 76%} 
 
 .header{
-  background-color: #595959;
+  background-color:chocolate;
   overflow: hidden;
   padding-bottom: 2%;
 }
 
 .navigation{
   overflow: hidden;
-  background-color: #595959;
+  background-color: chocolate;
 }
 
 .content{
@@ -20,7 +20,7 @@ body{font-family: 'Montserrat';font-size: 22px; font-size: 76%}
 }
 
 .footer{
-  background-color: #595959 ;
+  background-color: chocolate ;
   color: white;
   overflow: hidden;
   position: relative;
@@ -462,10 +462,14 @@ label{
 
 td{
   text-align: center;
-  margin: 2%;
+  margin: 1%;
   text-justify: distribute-all-lines;
 }
 
 h3{
   font-size: 180%;
+}
+
+table{
+  width: 100%;
 }
