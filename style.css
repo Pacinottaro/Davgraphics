@@ -438,12 +438,12 @@ label{
   width:235px;
 }
 
-.immag{
-  width: 500px; 
-  margin: 10px;
+.immag{ 
+  width: 80%;
+  margin: 1%;
   display:inline-block;
   text-align:center;
-  border-radius: 60px;
+  border-radius: 2vw;
 }
 
 .AM{
@@ -458,6 +458,8 @@ label{
 
 .titotab{
   margin-top: 0;
+  width:100%;
+  font-size:2vw;
 }
 
 td{
@@ -472,4 +474,5 @@ h3{
 
 table{
   width: 100%;
+  table-layout: fixed;
 }
