@@ -2,14 +2,14 @@ html,body{height:  100%; margin:0; padding: 0}
 body{font-family: 'Montserrat';font-size: 22px; font-size: 76%} 
 
 .header{
-  background-color:chocolate;
+  background-color:#595959;
   overflow: hidden;
   padding-bottom: 2%;
 }
 
 .navigation{
   overflow: hidden;
-  background-color: chocolate;
+  background-color: #595959;
 }
 
 .content{
@@ -20,7 +20,7 @@ body{font-family: 'Montserrat';font-size: 22px; font-size: 76%}
 }
 
 .footer{
-  background-color: chocolate ;
+  background-color: #595959 ;
   color: white;
   overflow: hidden;
   position: relative;
