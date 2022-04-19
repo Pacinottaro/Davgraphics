@@ -480,7 +480,7 @@ label{
 
 .t1{
   margin: 0 auto;
-  width: 80vw;
+  width: 100vw;
   border-collapse: collapse;
   table-layout: fixed;
   text-align:center;
@@ -488,11 +488,10 @@ label{
 }
 
 .t1 th{
-  margin-right: 2%;
+  display: inline-block;
 }
 
 .t1 th a{
-  margin-right: 2%;
   font-size: large;
   padding: 10px 20px 10px 20px;
   color: white;
