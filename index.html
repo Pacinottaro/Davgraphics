@@ -7,6 +7,7 @@
 <title>David's Illustrations</title>
 <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -15,16 +16,108 @@
         <tr>
           <th><a href="./index.html">Home</a></th>
           <th><a href="./Shop.html">Shop</a></th>
-          <th><a href="./ContactMe.html">Contact Me</a></th>
-          <th><a href="./index.html#AboutMe">About Me</a></th>
+          <th><a href="./ContactMe.html">Contatti</a></th>
+          <th><a href="./index.html#AboutMe">David</a></th>
         </tr>
       </table>
     </div>
-    <div class="container">
       <div class="header">
-        <div style="position: absolute; top: 50%; left:20%;">
-          <img alt="banner" src="./Banner.png" class="imma">
-        </div>  
+        <div id="messenger"></div>
+        <script type="text/javascript">
+          var Messenger = function(el){
+              'use strict';
+              var m = this;
+              
+              m.init = function(){
+                m.codeletters = "&#*+%?£@§$";
+                m.message = 0;
+                m.current_length = 0;
+                m.fadeBuffer = false;
+                m.messages = [
+                  'Davids Illustrations',
+                  'Digital Art',
+                  'davgraphics03@gmail.com',
+                  'Contact Me'
+                ];
+                
+                setTimeout(m.animateIn, 100);
+              };
+              
+              m.generateRandomString = function(length){
+                var random_text = '';
+                while(random_text.length < length){
+                  random_text += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
+                } 
+                
+                return random_text;
+              };
+              
+              m.animateIn = function(){
+                if(m.current_length < m.messages[m.message].length){
+                  m.current_length = m.current_length + 2;
+                  if(m.current_length > m.messages[m.message].length) {
+                    m.current_length = m.messages[m.message].length;
+                  }
+                  
+                  var message = m.generateRandomString(m.current_length);
+                  $(el).html(message);
+                  
+                  setTimeout(m.animateIn, 20);
+                } else { 
+                  setTimeout(m.animateFadeBuffer, 20);
+                }
+              };
+              
+              m.animateFadeBuffer = function(){
+                if(m.fadeBuffer === false){
+                  m.fadeBuffer = [];
+                  for(var i = 0; i < m.messages[m.message].length; i++){
+                    m.fadeBuffer.push({c: (Math.floor(Math.random()*12))+1, l: m.messages[m.message].charAt(i)});
+                  }
+                }
+                
+                var do_cycles = false;
+                var message = ''; 
+                
+                for(var i = 0; i < m.fadeBuffer.length; i++){
+                  var fader = m.fadeBuffer[i];
+                  if(fader.c > 0){
+                    do_cycles = true;
+                    fader.c--;
+                    message += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
+                  } else {
+                    message += fader.l;
+                  }
+                }
+                
+                $(el).html(message);
+                
+                if(do_cycles === true){
+                  setTimeout(m.animateFadeBuffer, 50);
+                } else {
+                  setTimeout(m.cycleText, 2000);
+                }
+              };
+              
+              m.cycleText = function(){
+                m.message = m.message + 1;
+                if(m.message >= m.messages.length){
+                  m.message = 0;
+                }
+                
+                m.current_length = 0;
+                m.fadeBuffer = false;
+                $(el).html('');
+                
+                setTimeout(m.animateIn, 200);
+              };
+              
+              m.init();
+            }
+
+            console.clear();
+            var messenger = new Messenger($('#messenger'));
+        </script>
       </div>
     <div class="content">
       <p>
@@ -69,7 +162,8 @@
                   <div id="caption3"></div>
                 </div></li>
 
-              <script> // Get the modal
+              <script>
+               // Get the modal
                 var modal = document.getElementById("myModal");
                
                 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -186,6 +280,5 @@
       <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</a>.
       <br>
     </div>
-  </div>
 </body>
 </html>
