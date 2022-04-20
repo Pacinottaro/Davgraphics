@@ -20,6 +20,7 @@ body{
 }
 
 .navigation{
+  background-color: #1a1a1a;
   position: fixed;
   text-align:center;
   z-index: 2;
@@ -515,3 +516,4 @@ label{
   white-space: nowrap;
   text-shadow: 0 2px 2px rgba(#000, 0.9);
 }
+
