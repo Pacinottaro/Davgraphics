@@ -22,6 +22,7 @@
     <div class="content">
       <br><br>
       <div name="AboutMe">
+        <form id="cont" method="post" enctype="text/plain" action="mailto:davgraphics03@gmail.com">
         <div class="background">
           <div class="container">
             <div class="screen">
@@ -48,20 +49,20 @@
                 <div class="screen-body-item">
                   <div class="app-form">
                     <div class="app-form-group">
-                      <input class="app-form-control" placeholder="NAME" value="Francesca Bianchi">
+                      <input class="app-form-control" placeholder="NAME" value="Francesca Bianchi" name="nome">
                     </div>
                     <div class="app-form-group">
-                      <input class="app-form-control" placeholder="francescabianchi@gmail.com">
+                      <input class="app-form-control" placeholder="francescabianchi@gmail.com" name="mail">
                     </div>
                     <div class="app-form-group">
-                      <input class="app-form-control" placeholder="+39 324 432 8744">
+                      <input class="app-form-control" placeholder="+39 324 432 8744" name="tel">
                     </div>
                     <div class="app-form-group message">
-                      <input class="app-form-control" placeholder="Vi contatto per...">
+                      <input class="app-form-control" placeholder="Vi contatto per..." name="mess">
                     </div>
                     <div class="app-form-group buttons">
                       <button class="app-form-button">CANCEL</button>
-                      <button class="app-form-button">SEND</button>
+                      <button class="app-form-button" type="submit">SEND</button>
                     </div>
                   </div>
                 </div>
@@ -69,6 +70,7 @@
             </div>
           </div>
         </div>
+      </form>
       </div>
     </div>
   </div>
